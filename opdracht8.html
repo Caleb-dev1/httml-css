@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+    <html>
+    <head>
+    <title>Opdracht 10</title>
+    <style>
+    button {
+      background-color:   #007BFF;
+      color:  White;
+      padding:  10px 20px;
+      border-radius:  5px;
+      transition:   background-color  0.3s ease, color 0.3s ease;
+    }
+    button:hover{
+      background-color:   #0056b3;
+      color: #ffcc00
+    }
+
+    button{
+      cursor: pointer;
+    }
+
+
+    p {
+      cursor: not-allowed; 
+    }
+
+    .drag {
+      cursor: move; 
+    }
+    </style>
+    </head>
+    <body>
+    <p>Formulier voor aanbevelingen</p>
+      <div class='divBasis'>
+        <div>
+          <label for='naam'>StudentNaam</label>
+          <input type='text' name='' id='naam'>
+        </div>
+        <div>
+          <label for='email'>Email</label>
+          <input type='email' name='' id='email'>
+        </div>
+        <div class='adress'>
+          <div><label for='adres'>Adres</label><input type='text' name='' id='adres'></div>
+          <div><label for='postcode'>Postcode</label><input type='text' name='' id='postcode'></div>
+          <div><label for='woonplaats'>Woonplaats</label><input type='text' name='' id='woonplaats'></div>
+        </div>
+        <div class='checks'>
+          <div>
+            <label for='opleiding'> Richting</label>
+            <select>
+              <option>SD (N4)</option>
+              <option>ICT Beheer (N4)</option>
+              <option>ICT (N3)</option>
+            </select>
+          </div>
+          <div>
+            <label for='opleiding'> BBL</label>
+            <input type='checkbox' id='opleiding' name='opleiding' value='1'>
+          </div>
+        </div>
+        <div class='commentaar'>
+          <label for='commentaar'>Aanbevelingen</label>
+           <textarea id="commentaar"></textarea>
+        </div>
+       <div class="drag" style="width:150px; height:60px; background:#eee; margin-top:20px; display:flex; align-items:center; justify-content:center;">
+        Versleep mij
+       </div>
+
+    <button style="margin-top:20px;">Verstuur</button>
+
+
+        </div>
+      </div>
+    </body>
+    </html>

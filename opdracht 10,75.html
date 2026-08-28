@@ -1,0 +1,145 @@
+  
+  <!DOCTYPE html>
+      <html>
+      <head>
+      <title>Opdracht 10</title>
+      <style>
+        p{
+          margin: auto;
+          width: 400px;
+          height: 50px;
+          background: grey;
+          text-align: center;
+          line-height: 50px;
+          color: white;
+        }
+        .divBasis{
+          margin: auto;
+          width: 1000px;
+          height: 500px;
+          background: rgb(240,255,255);
+          border: 2px solid black;
+          color: grey;
+        }
+        #naam{
+          display: block;
+          width: 500px;
+          height: 15px;
+          border-spacing: 5px;
+          border: 2px solid black;
+          padding: 5px;
+          margin: auto 7px;
+          color: grey;
+          border-radius: 5px;
+
+        }
+
+        #email{
+          display: block;
+          width: 500px;
+          height: 15px;
+          padding: 5px;
+          border-spacing: 5px;
+          border: 2px solid black;
+          margin: auto 10px;
+          border-radius: 5px;
+        }
+        .adress div {
+                      display: inline-block;
+                       margin-right: 20px;
+                     }
+
+        #adres{
+           display: block;
+          width: 200px;
+          height: 10px;
+          padding: 5px;
+          border-spacing: 5px;
+          border: 2px solid black;
+          margin: auto 10px;
+          border-radius: 5px;
+        }
+        #postcode{
+          display: block;
+          width: 200px;
+          height: 15px;
+          padding: 5px;
+          border-spacing: 5px;
+          border: 2px solid black;
+          margin: auto 10px;
+          border-radius: 5px;
+        }
+
+
+         #woonplaats{
+          display: block;
+          width: 200px;
+          height: 15px;
+          padding: 5px;
+          border-spacing: 5px;
+          border: 2px solid black;
+          margin: auto 10px;
+          border-radius: 5px;
+        }
+
+        .checks div { 
+          display: inline;
+          margin-right: 20px;
+
+           .commentaar textarea{
+          display: block;
+          width: 300px;
+          height: 20px;
+          padding: 5px;
+          border-spacing: 5px;
+          border: 2px solid black;
+          margin: auto 10;
+          border-radius: 5px;
+
+
+          }
+
+
+
+
+
+      </style>
+      </head>
+      <body>
+      <p>Formulier voor aanbevelingen</p>
+        <div class='divBasis'>
+          <div>
+            <label for='naam'>StudentNaam</label>
+            <input type='text' name='' id='naam'>
+          </div>
+          <div>
+            <label for='email'>Email</label>
+            <input type='email' name='' id='email'>
+          </div>
+          <div class='adress'>
+            <div><label for='adres'>Adres</label><input type='text' name='' id='adres'></div>
+            <div><label for='postcode'>Postcode</label><input type='text' name='' id='postcode'></div>
+            <div><label for='woonplaats'>Woonplaats</label><input type='text' name='' id='woonplaats'></div>
+          </div>
+          <div class='checks'>
+            <div>
+              <label for='opleiding'> Richting</label>
+              <select>
+                <option>SD (N4)</option>
+                <option>ICT Beheer (N4)</option>
+                <option>ICT (N3)</option>
+              </select>
+            </div>
+            <div>
+              <label for='opleiding'> BBL</label>
+              <input type='checkbox' id='opleiding' name='opleiding' value='1'>
+            </div>
+          </div>
+            <div class="commentaar">
+               <label for="commentaar">Aanbevelingen</label>
+               <textarea id="commentaar"></textarea>
+            </div>
+          </div>
+        </div>
+      </body>
+      </html>
